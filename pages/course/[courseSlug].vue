@@ -92,8 +92,6 @@
 </template>
 
 <script setup lang="ts">
-import { useCourse } from '../../composables/useCourses';
-
 const route = useRoute();
 const courseSlug = route.params.courseSlug as string;
 const { course, prevCourse, nextCourse } = useCourse(courseSlug);

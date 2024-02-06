@@ -1,5 +1,5 @@
 import coursesData from '~/coursesData';
-import type { CourseWithPath } from '~/lecture/types/course';
+import type { CourseWithPath } from '~/types/course';
 
 interface CoursesReturn {
   courses: CourseWithPath[];

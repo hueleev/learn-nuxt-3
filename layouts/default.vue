@@ -14,6 +14,10 @@
         <!-- <q-btn stretch flat label="Home" to="/" />
         <q-separator dark vertical />
         <q-btn stretch flat label="About" to="/about" /> -->
+        <q-separator dark vertical />
+        <NuxtLink v-slot="{ navigate }" custom to="/admin">
+          <q-btn stretch flat label="Admin" no-caps @click="navigate()" />
+        </NuxtLink>
       </q-toolbar>
     </q-header>
     <q-page-container :style="pageContainerStyle">

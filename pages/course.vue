@@ -27,8 +27,6 @@
 </template>
 
 <script setup lang="ts">
-import { useCourses } from '../composables/useCourses';
-
 const { courses } = useCourses();
 </script>
 
