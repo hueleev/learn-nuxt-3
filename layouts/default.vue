@@ -11,6 +11,8 @@
         <NuxtLink v-slot="{ navigate }" custom to="/about">
           <q-btn stretch flat label="About" no-caps @click="navigate()" />
         </NuxtLink>
+        <q-separator dark vertical />
+        <q-btn stretch flat label="Youtube" no-caps @click="moveYoutube" />
         <!-- <q-btn stretch flat label="Home" to="/" />
         <q-separator dark vertical />
         <q-btn stretch flat label="About" to="/about" /> -->
@@ -41,4 +43,11 @@ const pageContainerStyle = computed(() => ({
   maxWidht: '1080px',
   margin: '0 auto',
 }));
+
+const moveYoutube = async () => {
+  await navigateTo('https://youtube.com/@gymcoding', {
+    external: true,
+    open: { target: '_blank' },
+  });
+};
 </script>
